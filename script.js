@@ -3,7 +3,6 @@ const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const password2 = document.getElementById("password2");
-
 //Show input error message
 function showError(input, message) {
   const formControl = input.parentElement;
@@ -47,9 +46,9 @@ form.addEventListener("submit", function (e) {
     showSuccess(password);
   }
 
-  if (password.value === "") {
-    showError(password, "Password is requeired");
+  if (password2.value === "") {
+    showError(password2, "Password is requeired");
   } else {
-    showSuccess(password);
+    showSuccess(password2);
   }
 });
